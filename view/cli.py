@@ -1,8 +1,7 @@
 
 from model.movie import Movie
 from controller.search_movie import  search_menu
-from app.services import recipe_service
-from controller.movie_handler import show_movie_from_json, write_movie_to_json
+from controller.movie_handler import show_movie_from_json, write_movie_to_json, rent_movie
 import json
 
 def menu_user_input():
@@ -12,7 +11,7 @@ Bitte wählen Sie eine Option:
 2. Neuen Film hinzufügen  # build / check / done
 3. Film suchen # check / done
 4. Film ausleihen / zurückgeben  # build / check / done
-5. Programm beenden  # build / check / done
+5. Programm beenden
 """
 
 #global recipe json dict import from file
@@ -33,7 +32,7 @@ def show_menu():
 # menu structure
     while True:
         print(menu_user_input())
-        user_option = input("Wählen Sie eine Option (1-4): ")
+        user_option = input("Wählen Sie eine Option (1-5): ")
 
 # show all recipes
         if user_option == '1':
@@ -53,14 +52,9 @@ def show_menu():
         elif user_option == '3':
             search_menu(moviebase_data)
 
-# edit recipe name
+# rent movie
         elif user_option == '4':
-            recipe_service.edit_recipe(recipe_data_new)
-
-# show all hidden recipe ids
-        elif user_option == '5':
-            for name, book in recipe_data_new.items():
-                print(f"\nRezept {name}: ID: {book['id']}")
+            rent_movie(moviebase_data)
 
 # close program
         elif user_option == '5':
