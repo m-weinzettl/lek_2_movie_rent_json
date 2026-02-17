@@ -8,7 +8,7 @@ def menu_user_input():
     return """
 Bitte wählen Sie eine Option:
 1. Alle Filme anzeigen
-2. Neuen Film hinzufügen  # build / check / done
+2. Neuen Film hinzufügen
 3. Film suchen
 4. Film ausleihen / zurückgeben  # build / check / done
 5. Programm beenden

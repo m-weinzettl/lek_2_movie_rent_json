@@ -1,5 +1,6 @@
 
 import json
+from controller.search_movie import *
 
 def show_movie_from_json(moviebase_data_new):
 
@@ -28,5 +29,13 @@ def write_movie_to_json(new_movie, moviebase_data):
         json.dump(moviebase_data, db, ensure_ascii=False, indent=4)
         print(f"Titel {new_movie.title}: Erfolgreich gespeichert")
 
-def rent_movie(moviebase_data):
-    pass
+def rent_movie(moviebase_data, title, book ,rent_input):
+    if rent_input == "y":
+
+        moviebase_data[title]["verfuegbar"] = False
+
+        with open("./movies.json", 'w', encoding='utf-8') as db:
+            json.dump(moviebase_data, db, ensure_ascii=False, indent=4)
+            print(f"Film {title} geliehen!")
+    else:
+        print("Buch nicht geliehen")
