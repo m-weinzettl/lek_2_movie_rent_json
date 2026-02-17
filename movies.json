@@ -138,5 +138,13 @@
         ],
         "erscheinungsjahr": 2020,
         "verfuegbar": true
+    },
+    "test_5": {
+        "genre": [
+            "wert",
+            "rrrr"
+        ],
+        "erscheinungsjahr": 2005,
+        "verfuegbar": true
     }
 }

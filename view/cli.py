@@ -37,7 +37,7 @@ def show_menu():
 # show all movies
         if user_option == '1':
             if not moviebase_data:
-                print("Kein Rezept gefunden.")
+                print("Keinen Film gefunden.")
             else:
                 show_movie_from_json(moviebase_data)
 
@@ -46,7 +46,9 @@ def show_menu():
             new_movie = Movie()
             new_movie.fill_movie()
 
-            write_movie_to_json(new_movie, moviebase_data)
+            if new_movie.is_valid():
+                write_movie_to_json(new_movie, moviebase_data)
+
 
 # search movie
         elif user_option == '3':
