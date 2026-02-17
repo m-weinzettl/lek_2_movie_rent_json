@@ -1,7 +1,7 @@
 
 from model.movie import Movie
 from controller.search_movie import  search_menu
-from controller.movie_handler import show_movie_from_json, write_movie_to_json, rent_movie
+from controller.movie_handler import show_movie_from_json, write_movie_to_json, return_movie
 import json
 
 def menu_user_input():
@@ -9,8 +9,8 @@ def menu_user_input():
 Bitte wählen Sie eine Option:
 1. Alle Filme anzeigen
 2. Neuen Film hinzufügen
-3. Film suchen
-4. Film ausleihen / zurückgeben  # build / check / done
+3. Film suchen / ausleihen
+4. Film zurückgeben  # build / check / done
 5. Programm beenden
 """
 
@@ -54,7 +54,8 @@ def show_menu():
 
 # rent movie
         elif user_option == '4':
-            rent_movie(moviebase_data)
+            return_movie(moviebase_data)
+
 
 # close program
         elif user_option == '5':

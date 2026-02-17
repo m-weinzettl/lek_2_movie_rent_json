@@ -57,7 +57,7 @@
     "Ferris Bueller's Day Off": {
         "genre": "Comedy",
         "erscheinungsjahr": 1986,
-        "verfuegbar": true
+        "verfuegbar": false
     },
     "Battle Royale": {
         "genre": "Action / Thriller",
@@ -72,7 +72,7 @@
     "American Beauty": {
         "genre": "Drama",
         "erscheinungsjahr": 1999,
-        "verfuegbar": false
+        "verfuegbar": true
     },
     "The Name of the Rose": {
         "genre": "Mystery / Drama",

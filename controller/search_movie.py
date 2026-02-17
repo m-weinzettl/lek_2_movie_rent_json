@@ -1,6 +1,6 @@
 
 import json
-from controller.movie_handler import *
+from controller.movie_handler import rent_movie
 def search_menu(moviebase_data):
     print("""
 Rezept suchen:

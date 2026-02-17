@@ -39,3 +39,26 @@ def rent_movie(moviebase_data, title, book ,rent_input):
             print(f"Film {title} geliehen!")
     else:
         print("Buch nicht geliehen")
+
+def return_movie(moviebase_data):
+    return_movie_name = input("Welchen film wollen Sie zurückgeben?").lower()
+    found = False
+
+    for title, book in moviebase_data.items():
+        if return_movie_name.lower() == title.lower() or return_movie_name in str(title.lower()):
+            found = True
+            print(f"Film {title} gefunden!")
+            back_input = input("Wollen Sie den Film zurückgeben?. (y/n): ")
+            if back_input.lower() == "y":
+                moviebase_data[title]["verfuegbar"] = True
+
+                with open("./movies.json", 'w', encoding='utf-8') as db:
+                    json.dump(moviebase_data, db, ensure_ascii=False, indent=4)
+                    print(f"Film {title} zurückgegeben!")
+            else:
+                print("Film nicht zurückgeben!")
+
+
+    if not found:
+        print("Kein Film gefunden!.")
+    pass
