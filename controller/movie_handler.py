@@ -4,13 +4,21 @@ import json
 def show_movie_from_json(moviebase_data_new):
 
         for title, book in moviebase_data_new.items():
-            print(f"\nFilm {title}:")
+            print(f"\nFilm: {title}")
             print("Genre:")
             for genre in book["genre"]:
                 print(f"- {genre}")
-            print("Verfügbarkeit:")
-            for availability in book["verfuegbar"]:
-                print(f"- {availability}")
+            print("Erschienen:")
+
+            release = book["erscheinungsjahr"]
+            print(f"- {release}")
+
+            print("Verfügbar:")
+            available = book["verfuegbar"]
+            if available:
+                print("Ja")
+            else:
+                print("Nein")
 
 def write_movie_to_json(new_movie, moviebase_data):
 

@@ -16,17 +16,22 @@ Rezept suchen:
             break
 
 def search_by_name(moviebase_data):
-    search_name = input("Bitte Rezeptname eingbene: ").lower()
+    search_title = input("Bitte Film Titel eingebene: ").lower()
     found = False
 
-    for titel, book in moviebase_data.items():
-        if search_name.lower() == titel.lower():
+    for title, book in moviebase_data.items():
+        if search_title.lower() == title.lower() or search_title in str(title.lower()):
             found = True
-            print(f"Film {titel} gefunden!")
+            print(f"Film {title} gefunden!")
             show = input("Wollen Sie die Verfügbarkeit anzeigen. (y/n): ")
             if show.lower() == "y":
-                for availability in book["verfuegbar"]:
-                    print(f" - {availability}")
+                print("Verfügbar:")
+                available = book["verfuegbar"]
+                if available:
+                    print("Ja")
+                else:
+                    print("Nein")
+
             elif show.lower() == "n":
                 break
             else:
