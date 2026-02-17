@@ -43,7 +43,7 @@ def show_menu():
 
 # add new movie
         elif user_option == '2':
-            new_movie = Movie()
+            new_movie = Movie() #creates a None object!!
             new_movie.fill_movie()
 
             if new_movie.is_valid():

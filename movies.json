@@ -121,30 +121,5 @@
         ],
         "erscheinungsjahr": 1986,
         "verfuegbar": true
-    },
-    "test": {
-        "title": "test",
-        "genre": [
-            "tert",
-            "ert"
-        ],
-        "erscheinungsjahr": "2006",
-        "verfuegbar": true
-    },
-    "test_4": {
-        "title": "test_4",
-        "genre": [
-            "Normal"
-        ],
-        "erscheinungsjahr": 2020,
-        "verfuegbar": true
-    },
-    "test_5": {
-        "genre": [
-            "wert",
-            "rrrr"
-        ],
-        "erscheinungsjahr": 2005,
-        "verfuegbar": true
     }
 }
