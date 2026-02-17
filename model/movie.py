@@ -21,9 +21,10 @@ class Movie:
 
     def fill_movie(self):
 
-        self.name = data_validation_title()
-        self.ingredients = data_validation_genre()
-        self.instructions = data_validation_availability()
+        self.title = data_validation_title()
+        self.genre = data_validation_genre()
+        self.release_date = data_validation_release_year()
+        self.availability = data_validation_availability()
 
 
 #code edit for json export

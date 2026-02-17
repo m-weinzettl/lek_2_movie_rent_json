@@ -24,15 +24,19 @@ def data_validation_genre():
     return genre_input_new
 
 
+def data_validation_release_year():
+    release_year_input_new = input("Geben Sie ein Erscheinungsdatum an:")
+
+
+    return release_year_input_new
+
+
 def data_validation_availability():
-    availability_input_new = []
-    while True:
-        instructions_input = input("Anleitung (Leer Enter um zu Beenden)\n(Max 100 Zeichen): ")
-        if instructions_input == '':
-            break
-        if 0 < len(instructions_input) <= 100:
-            availability_input_new.append(instructions_input)
-        else:
-            print("Anleitung zu lange. Bitte erneut eingeben")
+    availability_input_new = input("Geben Sie die Verfügbarkeit an(1. für Vorhanden, 2. für Nicht vorhanden :")
+
+    if availability_input_new == "1":
+        availability_input_new = True
+    else:
+        availability_input_new = False
 
     return availability_input_new

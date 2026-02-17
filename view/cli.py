@@ -7,9 +7,9 @@ import json
 def menu_user_input():
     return """
 Bitte wählen Sie eine Option:
-1. Alle Filme anzeigen # build / check / done
+1. Alle Filme anzeigen
 2. Neuen Film hinzufügen  # build / check / done
-3. Film suchen # check / done
+3. Film suchen
 4. Film ausleihen / zurückgeben  # build / check / done
 5. Programm beenden
 """

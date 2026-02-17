@@ -1,82 +1,134 @@
 {
-  "The Usual Suspects": {
-    "genre": ["Crime", "Thriller"],
-    "erscheinungsjahr": 1995,
-    "verfuegbar": true
-  },
-  "Tremors": {
-    "genre": ["Horror", "Comedy"],
-    "erscheinungsjahr": 1990,
-    "verfuegbar": true
-  },
-  "Pay It Forward": {
-    "genre": ["Drama"],
-    "erscheinungsjahr": 2000,
-    "verfuegbar": true
-  },
-  "La La Land": {
-    "genre": ["Musical", "Romance"],
-    "erscheinungsjahr": 2016,
-    "verfuegbar": true
-  },
-  "The Deer Hunter": {
-    "genre": ["War", "Drama"],
-    "erscheinungsjahr": 1978,
-    "verfuegbar": true
-  },
-  "Million Dollar Baby": {
-    "genre": ["Drama", "Sport"],
-    "erscheinungsjahr": 2004,
-    "verfuegbar": true
-  },
-  "The Shining": {
-    "genre": ["Horror", "Thriller"],
-    "erscheinungsjahr": 1980,
-    "verfuegbar": true
-  },
-  "Requiem for a Dream": {
-    "genre": ["Drama"],
-    "erscheinungsjahr": 2000,
-    "verfuegbar": true
-  },
-  "Me Before You": {
-    "genre": ["Romance", "Drama"],
-    "erscheinungsjahr": 2016,
-    "verfuegbar": true
-  },
-  "Funny Games": {
-    "genre": ["Psychological Thriller"],
-    "erscheinungsjahr": 1997,
-    "verfuegbar": true
-  },
-  "Cast Away": {
-    "genre": ["Adventure", "Drama"],
-    "erscheinungsjahr": 2000,
-    "verfuegbar": true
-  },
-  "Ferris Bueller's Day Off": {
-    "genre": ["Comedy"],
-    "erscheinungsjahr": 1986,
-    "verfuegbar": true
-  },
-  "Battle Royale": {
-    "genre": ["Action", "Thriller"],
-    "erscheinungsjahr": 2000,
-    "verfuegbar": true
-  },
-  "Cruel Intentions": {
-    "genre": ["Drama", "Romance"],
-    "erscheinungsjahr": 1999,
-    "verfuegbar": true
-  },
-  "American Beauty": {
-    "genre": ["Drama"],
-    "erscheinungsjahr": 1999,
-    "verfuegbar": true
-  },
-  "The Name of the Rose": {
-    "genre": ["Mystery", "Drama"],
-    "erscheinungsjahr": 1986,
-    "verfuegbar": true
-  }
+    "The Usual Suspects": {
+        "genre": [
+            "Crime",
+            "Thriller"
+        ],
+        "erscheinungsjahr": 1995,
+        "verfuegbar": true
+    },
+    "Tremors": {
+        "genre": [
+            "Horror",
+            "Comedy"
+        ],
+        "erscheinungsjahr": 1990,
+        "verfuegbar": true
+    },
+    "Pay It Forward": {
+        "genre": [
+            "Drama"
+        ],
+        "erscheinungsjahr": 2000,
+        "verfuegbar": true
+    },
+    "La La Land": {
+        "genre": [
+            "Musical",
+            "Romance"
+        ],
+        "erscheinungsjahr": 2016,
+        "verfuegbar": true
+    },
+    "The Deer Hunter": {
+        "genre": [
+            "War",
+            "Drama"
+        ],
+        "erscheinungsjahr": 1978,
+        "verfuegbar": true
+    },
+    "Million Dollar Baby": {
+        "genre": [
+            "Drama",
+            "Sport"
+        ],
+        "erscheinungsjahr": 2004,
+        "verfuegbar": true
+    },
+    "The Shining": {
+        "genre": [
+            "Horror",
+            "Thriller"
+        ],
+        "erscheinungsjahr": 1980,
+        "verfuegbar": true
+    },
+    "Requiem for a Dream": {
+        "genre": [
+            "Drama"
+        ],
+        "erscheinungsjahr": 2000,
+        "verfuegbar": true
+    },
+    "Me Before You": {
+        "genre": [
+            "Romance",
+            "Drama"
+        ],
+        "erscheinungsjahr": 2016,
+        "verfuegbar": true
+    },
+    "Funny Games": {
+        "genre": [
+            "Psychological Thriller"
+        ],
+        "erscheinungsjahr": 1997,
+        "verfuegbar": true
+    },
+    "Cast Away": {
+        "genre": [
+            "Adventure",
+            "Drama"
+        ],
+        "erscheinungsjahr": 2000,
+        "verfuegbar": true
+    },
+    "Ferris Bueller's Day Off": {
+        "genre": [
+            "Comedy"
+        ],
+        "erscheinungsjahr": 1986,
+        "verfuegbar": true
+    },
+    "Battle Royale": {
+        "genre": [
+            "Action",
+            "Thriller"
+        ],
+        "erscheinungsjahr": 2000,
+        "verfuegbar": true
+    },
+    "Cruel Intentions": {
+        "genre": [
+            "Drama",
+            "Romance"
+        ],
+        "erscheinungsjahr": 1999,
+        "verfuegbar": true
+    },
+    "American Beauty": {
+        "genre": [
+            "Drama"
+        ],
+        "erscheinungsjahr": 1999,
+        "verfuegbar": true
+    },
+    "The Name of the Rose": {
+        "genre": [
+            "Mystery",
+            "Drama"
+        ],
+        "erscheinungsjahr": 1986,
+        "verfuegbar": true
+    },
+    "test_2": {
+        "title": "test_2",
+        "genre": [
+            "test_",
+            "fsd"
+        ],
+        "erscheinungsjahr": "2006",
+        "verfuegbar": true
+    }
 }
