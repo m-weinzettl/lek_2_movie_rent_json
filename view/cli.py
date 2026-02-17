@@ -10,12 +10,12 @@ Bitte wählen Sie eine Option:
 1. Alle Filme anzeigen
 2. Neuen Film hinzufügen
 3. Film suchen / ausleihen
-4. Film zurückgeben  # build / check / done
+4. Film zurückgeben
 5. Programm beenden
 """
 
-#global recipe json dict import from file
-def load_from_json(recipe_data_new):
+
+def load_from_json(moviebase_data):
     try:
         with open("./movies.json", 'r', encoding='utf-8') as from_json:
             moviebase_data = json.load(from_json)
@@ -34,14 +34,14 @@ def show_menu():
         print(menu_user_input())
         user_option = input("Wählen Sie eine Option (1-5): ")
 
-# show all recipes
+# show all movies
         if user_option == '1':
             if not moviebase_data:
                 print("Kein Rezept gefunden.")
             else:
                 show_movie_from_json(moviebase_data)
 
-# add new recipe
+# add new movie
         elif user_option == '2':
             new_movie = Movie()
             new_movie.fill_movie()

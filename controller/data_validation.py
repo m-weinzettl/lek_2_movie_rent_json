@@ -2,7 +2,7 @@
 def data_validation_title():
 
     while True:
-        title_input = input("Bitte geben Sie einen Film titel ein (max. 200 Zeichen: ")
+        title_input = input("Bitte geben Sie einen Film titel ein (max. 200 Zeichen): ")
         if 0 < len(title_input) <= 200:
             break
         else:
@@ -25,7 +25,13 @@ def data_validation_genre():
 
 
 def data_validation_release_year():
-    release_year_input_new = input("Geben Sie ein Erscheinungsdatum an:")
+    while True:
+        try:
+            release_year_input_new = int(input("Geben Sie ein Erscheinungsdatum an:"))
+            break
+
+        except ValueError:
+            print("Es sind nur Zahlen erlaubt!")
 
 
     return release_year_input_new

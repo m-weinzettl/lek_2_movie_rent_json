@@ -9,16 +9,6 @@ class Movie:
         self.availability = availability
 
 
-    def show_movie(self):
-        print(f"\nFilm für {self.title}:")
-        for genre in self.genre:
-            print(f"- {genre}")
-
-    def show_release_date(self):
-        print(f"\nAnleitung für {self.title}:")
-        for release_date in self.release_date:
-            print(f"- {release_date}")
-
     def fill_movie(self):
 
         self.title = data_validation_title()
